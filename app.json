@@ -1,8 +1,9 @@
 {
   "expo": {
     "name": "RedditClone",
-    "slug": "RedditClone",
+    "slug": "notJustRedditClone",
     "version": "1.0.0",
+    "scheme": "redditclone",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -24,6 +25,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": ["expo-router"]
   }
 }
