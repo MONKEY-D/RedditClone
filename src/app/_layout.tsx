@@ -1,7 +1,11 @@
-import { Slot, Stack } from "expo-router";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { StyleSheet } from "react-native";
+import { ClerkProvider } from "@clerk/clerk-expo";
+import { tokenCache } from "@clerk/clerk-expo/token-cache";
+import { Slot } from "expo-router";
 
-export default function Layout() {
-  return <Slot screenOptions={{ headerTitleAlign: "center" }} />;
+export default function RootLayout() {
+  return (
+    <ClerkProvider tokenCache={tokenCache}>
+      <Slot />
+    </ClerkProvider>
+  );
 }
