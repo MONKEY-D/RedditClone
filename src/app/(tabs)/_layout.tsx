@@ -20,6 +20,7 @@ export default function TabLayout() {
           ),
         }}
       />
+
       <Tabs.Screen
         name="chat"
         options={{
@@ -33,6 +34,7 @@ export default function TabLayout() {
           ),
         }}
       />
+
       <Tabs.Screen
         name="communities"
         options={{
@@ -42,6 +44,7 @@ export default function TabLayout() {
           ),
         }}
       />
+
       <Tabs.Screen
         name="inbox"
         options={{
@@ -51,6 +54,7 @@ export default function TabLayout() {
           ),
         }}
       />
+
       <Tabs.Screen
         name="create"
         options={{
